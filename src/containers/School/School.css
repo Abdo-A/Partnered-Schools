@@ -1,0 +1,201 @@
+#school {
+    text-align: center;
+    padding: 70px 0px;
+    font-family: "Gotham",sans-serif;
+}
+
+#school_website_button:link, #school_website_button:visited{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 48px;
+    background-color: #bd1a41;
+    color: #fff;
+    margin: 0 auto 30px auto;
+    font-size: 12px;
+    font-family: 'Gotham-Medium';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+#school_website_button:hover {
+    background-color: #a82342;
+}
+
+#school_website-arrow {
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+#image-slider {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 628px;
+    margin:0 auto;
+    /*
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0 98%);
+    clip-path: polygon(2% 0, 100% 0, 100% 100%, 2% 100%);
+    clip-path: polygon(0 0, 98% 0, 98% 100%, 0% 100%);
+    */
+    clip-path: polygon(2% 0, 98% 0, 98% 98%, 2% 98%);
+}
+
+.school_text_wrapper {
+    width: 628px;
+    margin: 30px auto;
+    text-align: left;
+    font-size: 14px;
+    color: #9290A6;
+    font-weight: 600;
+    line-height: 23px;
+    font-family: "Gotham-Book";
+}
+
+#school_testimonial {
+    color: #fff;
+    padding: 8% 15%;
+    text-align: left;
+    margin: 90px 0;
+    min-height: 80vh;
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#school_testimonial_left {
+    width: 30%;
+    float: left;
+}
+
+#school_testimonial_right {
+    width: 70%;
+    float: left;
+    height: 100%;
+}
+
+#school_testimonial_title {
+    text-transform: uppercase;
+    font-family: "Gotham-Book";
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#school_testimonial_title:after {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    content: " ";
+    width: 30px;
+    margin-top: 12px;
+    margin-left: 0;
+  }
+
+#school_testimonial_body {
+    font-size: 36px;
+    font-family: "Gotham-Light";
+    font-weight: 700;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#school_testimonial_writer {
+    font-family: "Gotham-Book";
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 8%;
+}
+
+
+/* ADJUSTING THE IMAGE SLIDER */
+
+.carousel .control-dots .dot {
+    width: 30.5px !important;
+    height: 1px !important;
+    background: #bd1a41 !important;
+    border-radius: 0% !important;
+    box-shadow:0px 0px 0px !important;
+}
+
+.carousel .control-dots {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-bottom: 0;
+    padding:0;
+    
+}
+
+.carousel.carousel-slider .control-arrow{
+    height: 60px;
+    width: 60px;
+    margin: auto 0;
+    margin-bottom: 20%;
+    background: #bd1a40;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: #bd1a4060;
+}
+
+.carousel .control-disabled.control-arrow {
+    opacity: 0;
+}
+@media (max-width: 1000px){
+    #school_testimonial_body {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 900px){
+    #image-slider {
+        width: 85%;
+    }
+    .school_text_wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px){
+    #school {
+        padding: 30px 0;
+    }
+
+    .carousel.carousel-slider .control-arrow {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 40%;
+    }
+    .school_text_wrapper {
+        margin: 0 auto
+    }
+    #school_testimonial {
+        margin: 50px 0;
+    }
+    #school_testimonial_left, #school_testimonial_right {
+        width: 100%;
+    }
+
+    #school_testimonial_body {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #school_testimonial_writer {
+        margin-bottom: 15%;
+    }
+}

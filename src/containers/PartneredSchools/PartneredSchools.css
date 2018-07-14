@@ -1,0 +1,235 @@
+#partneredschools {
+    background-color: #EFEEF3;
+    display: grid;
+    min-height: 120vh;
+    font-family: "Gotham",sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+#partneredschools_secondary_title {
+    text-transform: uppercase;
+    color: #bd1a41;
+    font-family: 'Gotham';
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+#partneredschools_secondary_title:after {
+    display: block;
+    height: 2px;
+    background-color: #bd1a41;
+    content: " ";
+    width: 30px;
+    margin-top: 12px;
+    margin-left: 2%;
+  }
+
+#partneredschools_letters {
+    width: 30%;
+    margin-left: 12px;
+    margin-top: 60px;
+    font-family: "Gotham-Medium";
+}
+
+#partneredschools_letter_wrapper {
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    margin: 7px 0;
+}
+
+#partneredschools_letter:link,#partneredschools_letter:visited {
+    text-decoration: none;
+    color: #a9a6ba;
+}
+
+#partneredschools_left_column {
+    width: 15%;
+    float: left;
+    position: fixed;
+}
+#continentsSelect, #countriesSelect {
+    width: 186px;
+    height: 45px;
+    border: solid 1px #dddce2;
+    color: #4e4a6e;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 12px;
+    background-color: transparent;
+    padding-left: 5px;
+}
+
+#continentsSelect {
+    margin-left: -20px;
+    margin-right: 20px
+}
+
+#partneredschools_selects {
+    margin-top: 1%;
+    float: right;
+    margin-right: 1%;
+}
+
+.partneredschools_cards_wrapper {
+    margin: 0;
+    float: right;
+    width: 80%;
+}
+
+.partneredschools_letter_and_cards_wrapper {
+    margin-top: 2%;
+    padding-top: 5%;
+}
+
+#partneredschools_letter_for_cards {
+    color: #bd1a41;
+    margin: 10px;
+}
+
+#partneredschools_card {
+    height: 210px;
+    display: inline-block;
+    width: 47.6%;
+    margin: 1.2%;
+    background-color:#fff;
+    padding: 20px 0 0 45px;
+    box-sizing: border-box;
+}
+
+
+#partneredschools_card_title {
+    color: #706d8c;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Gotham';
+    font-weight: 400;
+}
+#partneredschools_card_city_country {
+    color: #ccc;
+    font-size: 12px;
+    font-family: "Gotham";
+    font-weight: 400;
+    margin-bottom: 18%;
+}
+#partneredschools_card_website {
+    color: #bd1a41;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Gotham";
+    font-weight: 400;
+}
+
+#websiteIcon {
+    font-size: 5px
+}
+
+@media (min-width: 700px){
+    option {
+        display: inline-block;
+        height: 45px
+    }
+}
+
+@media (max-width: 900px){
+    #partneredschools_selects {
+        margin-right: 5%;
+    }
+
+    #continentsSelect, #countriesSelect {
+        display: block;
+    }
+    #continentsSelect {
+        margin: 0 0 10px 0;
+    }
+
+    .partneredschools_cards_wrapper {
+        float: right;
+    }
+
+    .partneredschools_letter_and_cards_wrapper {
+        margin-top: 20%;
+    }
+
+    #partneredschools_card {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #partneredschools_letters {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px){
+    #partneredschools_left_column {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+
+    #partneredschools_secondary_title {
+        margin-bottom: 170px;
+    }
+
+    #partneredschools_letters {
+        width: auto;
+        overflow-y: auto;
+        white-space: nowrap;
+        padding: 27px 40px;
+        background-color: #fff;
+        margin: 0;
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+
+    #partneredschools_letters::-webkit-scrollbar{
+        background: transparent;
+        height: 0;
+    }
+
+    #partneredschools_letter_wrapper {
+        width: 50px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .partneredschools_cards_wrapper {
+        width: 100%;
+        display:block;
+        margin-top: 0;
+    }
+
+    .partneredschools_letter_and_cards_wrapper {
+        margin-top: 10%;
+    }
+
+    #partneredschools_card {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    #partneredschools_selects {
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        width: 95%;
+        left: 2.5%;
+        margin:0;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #continentsSelect, #countriesSelect {
+        width:90%;
+        margin:0 auto;
+        padding-left: 12px;
+    }
+    #continentsSelect {
+        margin-bottom: 12px;
+    }
+}
