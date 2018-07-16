@@ -155,11 +155,15 @@
 }
 
 .carousel.carousel-slider .control-arrow:hover {
-    background: #bd1a4060;
+    background: #bd1a40a6;
 }
 
 .carousel .control-disabled.control-arrow {
     opacity: 1;
+}
+
+.carousel .control-disabled.control-arrow:hover {
+    background: #bd1a40;
 }
 
 .carousel .control-prev.control-arrow:before {
