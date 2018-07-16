@@ -25,7 +25,6 @@ class School extends Component {
     };
     
     componentWillMount() {
-
         setInterval(()=>{
 
             if(window.innerWidth!=this.state.userScreenWidth){
@@ -40,13 +39,19 @@ class School extends Component {
                 this.setState(()=>({school:school, schoolLoaded:true}));
             }
         });
+        
         return true;
     };
+
+    componentDidMount() {
+        document.getElementsByClassName("control-prev")[0].innerHTML= document.getElementsByClassName("left_arrow_icon")[0].innerHTML;
+        document.getElementsByClassName("control-next")[0].innerHTML= document.getElementsByClassName("right_arrow_icon")[0].innerHTML;        
+    }
+
     
     render() {
         return (
             <div id="school"> 
-
                 {this.state.userScreenWidth<=700?
                     <a id="school_website_button" href={this.state.school.website} target="_blank">School's Website<i className="fas fa-long-arrow-alt-right" id="school_website-arrow"></i></a>
                     :""
@@ -61,6 +66,7 @@ class School extends Component {
                         ))}
                     </Carousel>
                 </div>
+
 
                 <div className="school_text_wrapper">
                     <p>{this.state.school.text1}</p>
@@ -88,6 +94,9 @@ class School extends Component {
                 <div className="school_text_wrapper">
                     <p>{this.state.school.text2}</p>
                 </div>
+
+                <div className="left_arrow_icon" style={{display:'none'}}><i className='fas fa-long-arrow-alt-left'></i></div>
+                <div className="right_arrow_icon" style={{display:'none'}}><i className='fas fa-long-arrow-alt-right'></i></div>
 
              </div>
         );
